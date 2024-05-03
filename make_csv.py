@@ -7,7 +7,7 @@ versions = ['2.7', '3.5', '3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12']
 
 
 def get_data(version):
-    with open(f'raw{version}.txt') as f:
+    with open(f'output/raw{version}.txt') as f:
         return [l.strip() for l in f]
 
 
@@ -28,7 +28,7 @@ labels = [
 ]
 
 
-with open('results.csv', 'w') as f:
+with open('output/results.csv', 'w') as f:
     w = csv.writer(f)
     # Tag versions with a ".x" patch version so that CSV viewers don't
     # mistake "3.10" as numeric and drop the zero.
