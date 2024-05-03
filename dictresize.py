@@ -1,4 +1,5 @@
 import itertools
+from sys import argv
 from sys import getsizeof as memsize
 
 
@@ -54,7 +55,7 @@ def get_size_format(name):
 
 
 if __name__ == '__main__':
-    format_name = 'full'
+    format_name = argv[1]
     display_sizes(get_size_format(format_name))
     print('') # support 2.7
     display_resizes(get_resize_format(format_name))
