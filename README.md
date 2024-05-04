@@ -5,9 +5,13 @@ Quick &amp; dirty analysis of Python dict performance characteristics across ver
 
 Clone the repository, then run `./generate.sh` (assumes Linux).
 
-The `versions.txt` file lists versions of Python to try. The script will assume that the corresponding Python environments can be found like "python{version}".
+The `versions.txt` file lists versions of Python to try. The script will assume that the corresponding Python environments can be found like "python{version}" - so, `python2.7`, `python3.5` etc.
 
 An `output/` folder will appear with summary reports for each Python version, and a CSV file comparing all the results.
+
+## Discussion
+
+First see this reference link on Stack Overflow: [How are Python's Built In Dictionaries Implemented?](https://stackoverflow.com/questions/327311)
 
 The results should look something like:
 
